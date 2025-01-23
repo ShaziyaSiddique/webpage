@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           
+    .btn{
+place-items: center;
+align-items: center;
+font-size: 18px;
+display: inline;
+color: #fff;
+background: rgb(115, 201, 241);
+text-decoration: none;
+width: 20px;
+padding:  9px 25px;
+text-align: center;
+text-transform: uppercase;
+border-radius: 5px;
+}
+.stb:hover{
+background: none;
+color:black;
+border-style: solid;
+border-width: 2px;
+}   
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            
+            position: relative;
+        }
+        .navbar-item::after {
+            width: 0;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 50%;
+            transition: width 0.3s, left 0.3s;
+        }
+        .navbar-item:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .navbar-item:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+          
+            background-color: #333;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-item:hover {
+            background-color: #a43333;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        p {
+            color: #252525;
+            line-height: 1.6;
+        }
+        li{
+            color: #2f2e2e;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Popular Browser</div>
+        <div class="navbar-menu">
+            <a href="#" class="navbar-item">New</a>
+            <div class="dropdown">
+                <a href="#" class="navbar-item">Home</a>
+                <div class="dropdown-content">
+                    <a href="2page.html" class="dropdown-item">Mozilla Firefox</a>
+                    <a href="3page.html" class="dropdown-item">Safari</a>
+                    <a href="index.html" class="dropdown-item">Chrome</a>
+                </div>
+            </div>
+            <a href="#" class="navbar-item">Contact</a>
+            <a href="#" class="navbar-item">About</a>
+        </div>
+    </div>
+ 
+        <div class="main-content">
+            <h1>Mozilla Firefox</h1>
+            <p>Following are the various discrition of Mozilla Firefox</p>
+           <ul>
+            <li><p><a href="#what">What is Mozilla Firefox?</a></p></li>
+        <li> <p><a href="#History">Mozilla Firefox development history</a></p></li>
+    <li> <P><a href="#Features">Features</a></P></li>
+        </ul>
+            <h2 id="what"> What is Mozilla Firefox?</h2>
+            <img src="data:image/jpeg;base64,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">
+    <P>Mozilla Firefox, often referred to simply as Firefox, stands as a freely available web browser crafted by the Mozilla Foundation and its affiliate, the Mozilla Corporation. Engineered with the Gecko rendering engine, it excels in presenting web content in adherence to contemporary and forthcoming web standards.
+
+Firefox extends its reach to users across various operating systems, including Windows 10 and later editions, macOS, Linux, & mobile platforms like Android and iOS. Despite its versatility, the iOS version of Firefox utilizes the WebKit layout engine due to platform requisites. Furthermore, an optimized variant caters to Amazon Fire TV users through Amazon’s Silk Browser.
+
+The lineage of Firefox traces back to Netscape Navigator, with the Mozilla community originating from Netscape before its acquisition by AOL in 1998. Emerging in 2002 with the internal moniker “Phoenix,” Firefox emerged from the aspirations of Mozilla community members to offer a stand-alone browser experience, distinct from the bundled Mozilla Application Suite.
+
+Throughout its beta phase, Firefox garnered acclaim for its speed, security, and enriching array of add-ons, drawing praise in contrast to the then-dominant Internet Explorer 6. The official release occurred on November 9, 2004, heralding a significant milestone with 60 million downloads within nine months.</P>
+        </pre>
+    </p>
+    <h2 id="History">Mozilla Firefox development history</h2>
+    <p>The roots of Firefox can be directly traced back to Netscape, a prominent company renowned for its web browser, Netscape Navigator, which held dominance until Microsoft introduced Internet Explorer. Internally, the browser was referred to as Mozilla.
+
+        Eventually, Netscape disclosed the source code for Navigator under an open-source license, allowing unrestricted access and usage. Subsequently, a non-profit organization emerged to oversee the development of browsers utilizing this code, evolving into the Mozilla Foundation by 2003.</p>
+       <p> 
+        Nevertheless, Firefox wasn’t the browser originally envisioned by the Mozilla group. Similar to its predecessor, Netscape Navigator, Mozilla software encountered the challenge of expanding in size due to the addition of numerous features, a common issue termed “feature creep” or “bloat” in software development Enter Blake Ross, a computer aficionado who initially contributed to the Mozilla project as a hobby at the age of 14. Resisting feature creep, Ross initiated the development of his Mozilla-based browser, emphasizing simplicity and efficiency. The pivotal involvement of software developer Dave Hyatt also catalyzed progress. Ben Goodger joined the effort in 2003, accelerating development.</p>
+    <ul>
+        <li>1998: Netscape Communications Corp. released the source code for its Navigator browser to the open source community </li>
+        <li>2002: The Mozilla community developed Firefox under the codename "Phoenix" </li>
+        <li>2004: Firefox 1.0 was released, featuring tabbed browsing, pop-up blocking, and fraud protection </li>
+        <li>2017: Firefox began incorporating new technology under the code name "Quantum" </li>
+        <li>2020: Firefox began releasing new major versions every four weeks </li>
+    </ul>
+<h2 id="Features">Features</h2>
+<P>Firefox boasts several features that have revolutionized web browsing, setting it apart from its predecessors and prompting widespread adoption by other browsers. Let’s delve into these distinctive functionalities that have made Firefox a favorite among internet users.
+
+    <h3>1) Tabbed Browsing:</h3>
+    Tabbed browsing is arguably one of Firefox’s most notable features. Unlike earlier versions of Internet Explorer, which required opening a new browser window for each website, Firefox allows users to open multiple sites in separate tabs within the same browser window.
+    
+    This streamlined approach eliminates cluttered taskbars and conserves system resources, enhancing the browsing experience significantly.
+    
+    <h3>2) Built-in Pop-up Blocker:</h3>
+    Firefox incorporates a built-in pop-up blocker, shielding users from intrusive advertisements that disrupt the browsing experience. Users have the flexibility to configure the blocker to notify them when pop-ups are blocked and to allow exceptions for specific sites, ensuring that only relevant pop-ups are permitted.
+    
+    <h3>3) Cross-Platform Compatibility:</h3>
+    Firefox is a cross-platform application, compatible with various operating systems, including Windows, Mac OS X, and Linux. This versatility ensures that users can enjoy Firefox’s features seamlessly across different devices and platforms, catering to diverse user preferences and needs.
+    
+   <h3> 4) Private Browsing:</h3>
+    Firefox introduced the Private Browsing feature with its 3.5 release, offering users enhanced privacy by preventing the browser from recording search history or other identifiable session information. Alternatively, users can utilize the “Forget this Site” option to erase all traces of specific websites from their browsing history.</h3>
+    
+    <h3> Extension Ecosystem:</h3>
+    Perhaps one of Firefox’s most captivating features is its extensive library of extensions, allowing users to customize their browsing experience based on your preferences and requirements. With an array of extensions available, users can add functionalities ranging from productivity tools to entertainment features, tailoring Firefox to their unique needs.</P>  
+    <div >
+        <a href="index.html"class="input-group btn stb " >Previous</a>
+        <a href="3page.html"class="input-group btn stb " >Next</a>
+      </div>
+    </div>  
+    
+
+</body>
+</html>

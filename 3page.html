@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type="radio"] {
+margin-right: 5px;
+}
+.btn{
+place-items: center;
+align-items: center;
+font-size: 18px;
+display: inline;
+color: #fff;
+background: rgb(115, 201, 241);
+text-decoration: none;
+width: 20px;
+padding:  9px 25px;
+text-align: center;
+text-transform: uppercase;
+border-radius: 5px;
+}
+.stb:hover{
+background: none;
+color:black;
+border-style: solid;
+border-width: 2px;
+}
+.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            
+            position: relative;
+        }
+        .navbar-item::after {
+          
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 50%;
+            transition: width 0.3s, left 0.3s;
+        }
+        .navbar-item:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .navbar-item:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-item:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        p {
+            color: #252525;
+            line-height: 1.6;
+        }
+        li{
+            color: #2f2e2e;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Popular Browser</div>
+        <div class="navbar-menu">
+            <a href="#" class="navbar-item">New</a>
+            <div class="dropdown">
+                <a href="#" class="navbar-item">Home</a>
+                <div class="dropdown-content">
+                    <a href="2page.html" class="dropdown-item">Mozilla Firefox</a>
+                    <a href="3page.html" class="dropdown-item">Safari</a>
+                    <a href="index.html" class="dropdown-item">Chrome</a>
+                </div>
+            </div>
+            <a href="#" class="navbar-item">Contact</a>
+            <a href="#" class="navbar-item">About</a>
+        </div>
+    </div>
+    
+ 
+        <div class="main-content">
+            <h1>Safari</h1>
+            <p>Following are the various discrition of Safari</p>
+           <ul>
+            <li><p><a href="#what"> What is Safari? </a></p></li>
+            <li><p><a href="#History">Safari development history</a></p></li>
+        <li> <P><a href="#Features">Features</a></P></li>
+        </ul>
+    <h2 id="what">What is Safari?</h2>
+    <img src="data:image/jpeg;base64,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">
+ 
+     <p>It is built into several of Apple's operating systems, including macOS, iOS, iPadOS and visionOS, and uses Apple's open-source browser engine WebKit, which was derived from KHTML.
+        Safari was introduced in Mac OS X Panther in January 2003. It has been included with the iPhone since the first-generation iPhone in 2007. At that time, Safari was the fastest browser on the Mac. Between 2007 and 2012, Apple maintained a Windows version,[5][6] but abandoned it due to low market share. In 2010, Safari 5 introduced a reader mode, extensions, and developer tools. Safari 11, released in 2017, added Intelligent Tracking Prevention, which uses artificial intelligence to block web tracking. Safari 13 added support for Apple Pay, and authentication with FIDO2 security keys. Its interface was redesigned in Safari 15.</p>
+        <h2 id="History">Safari development history</h2>
+        <p><p>Safari's development reflects Apple's commitment to user privacy and innovation. The browser has consistently been a pioneer in adopting new web technologies. For example, Safari was the first major browser to support the HTML5 standard, which was a significant step in web development, allowing for more dynamic and interactive websites.
+
+            In 2010, Apple introduced the Safari Reader feature, which strips away ads and other distractions from web pages, providing a cleaner reading experience. This was followed by Reading List in 2011, enabling users to save web pages for later, even offline.
+            
+            Safari has also been at the forefront of energy efficiency. Apple's developers have continually optimized the browser to consume less power, extending battery life on MacBooks. This is particularly important for users who rely on their laptops for long periods without access to charging.
+            
+            With each macOS update, Safari receives enhancements that align with the latest operating system features. For instance, the introduction of macOS Big Sur brought a redesigned Safari with a customizable start page, improved tabs, and a new Privacy Report feature that gives users insights into how websites use their data.
+            
+           <p> Safari's close integration with the Apple ecosystem means it works seamlessly with other Apple services and devices. Features like Handoff allow users to continue browsing on different Apple devices effortlessly. Additionally, Safari supports strong password generation and storage, synchronizing with iCloud Keychain to keep passwords secure across all Apple devices.
+            
+            Apple's continuous focus on privacy is evident in features like the Privacy Report and prevention of third-party tracking. These initiatives make Safari one of the most privacy-focused browsers available.
+            
+            Safari has not only shaped web browsing on Apple devices but also influenced the broader web ecosystem through its innovative features and open-source WebKit engine.
+            
+            Would you like to explore more about Safari's impact on web standards or its current features?
+          </p>
+<h2 id="Features">Features</h2>
+<p>Until Safari 6.0, it included a built-in web feed aggregator that supported the RSS and Atom standards. Current features included Private Browsing (a mode in which the browser retains no record of information about the user's web activity),[146] the ability to archive web content in WebArchive format, the ability to email complete web pages directly from a browser menu, the ability to search bookmarks, and the ability to share tabs between all Mac and iOS devices running appropriate versions of software via an iCloud account.[147]
+
+   <h2>Web compatibility</h2>
+    In Safari's early years, it pioneered several HTML5 features that are now standard, such as the Canvas API.[148]
+    
+    In 2015, Safari was criticized for failing to keep pace with some modern web technologies.[149]
+    
+   <h2> Intelligent Tracking Prevention</h2>
+    In September 2017, Apple announced that it would use artificial intelligence (AI) to reduce the ability of advertisers to track Safari users as they browse the web. Cookies used for tracking will be allowed for 24 hours, then disabled, unless the AI system judges that the user wants to keep the cookie.[150] Major advertising groups objected, saying it will reduce the free services supported by advertising, while other experts praised the change.[151]
+    
+    <h2>Plugin support</h2>
+    Apple used a remotely updated plug-in blacklist to prevent potentially dangerous or vulnerable plugins from running on Safari. Initially, Flash and Java contents were blocked on some early versions of Safari. Since Safari 12, support for NPAPI plugins (except for Flash) has been completely dropped. Safari 14 finally dropped support for Adobe Flash Player.</p>
+    <a href="2page.html"class="input-group btn stb " >Previous</a>
+</div></body>
+</html>

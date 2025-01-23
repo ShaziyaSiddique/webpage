@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .btn {
+            display: inline-block;
+            font-size: 18px;
+            color: #fff;
+            background: rgb(115, 201, 241);
+            text-decoration: none;
+            padding: 10px 25px;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background: none;
+            color: black;
+            border: 2px solid rgb(115, 201, 241);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            position: relative;
+        }
+        .navbar-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 50%;
+            transition: width 0.3s, left 0.3s;
+        }
+        .navbar-item:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .navbar-item:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-item:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #3c3b3b;
+            line-height: 1.6;
+        }
+        li{
+            color: #434343;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Popular Browser</div>
+        <div class="navbar-menu">
+            <a href="#" class="navbar-item">New</a>
+            <div class="dropdown">
+                <a href="#" class="navbar-item">Home</a>
+                <div class="dropdown-content">
+                    <a href="2page.html" class="dropdown-item">Mozilla Firefox</a>
+                    <a href="3page.html" class="dropdown-item">Safari</a>
+                </div>
+            </div>
+            <a href="#" class="navbar-item">Contact</a>
+            <a href="#" class="navbar-item">About</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Google Chrome</h1>
+        <p>Following are the various discrition of Google Chrome</p>
+       <ul>
+        <li><p><a href="#what">What is Google Chrome?</a></p></li>
+    <li> <p><a href="#History">Google Chrome development history</a></p></li>
+<li> <P><a href="#Features">Features</a></P></li>
+    </ul>
+        <h2 id="what">What is Google Chrome?</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vV4LpWQSLNECZjgxQm_jz6FrJ0_prY6OUQ&s" width="150" height="150" >
+        
+        <p>Google Chrome browser is a free web browser used for accessing the internet and running web-based applications. The Google Chrome browser is based on the Open Source Chromium web browser project. Google released Chrome in 2008 and issues several updates a year.
+
+            Google Chrome is available for Microsoft Windows, Apple macOS and Linux desktop operating systems (OSes), as well as the Android and iOS mobile operating systems. Google Chrome is the default browser for Google devices including Android phones and Chromebook laptops. It is the most used web browser, with 66% of the market as of November 2022, according to StatCounter.
+            Google Chrome is part of Google services, Google's family of products that includes Gmail, Google Maps and the Chrome search engine. Many of Google services are hosted on Chrome, which was one of the first internet browsers to use the cloud to support applications such as Google Docs, Google's popular word processor.</p>
+        <h2 id="History">Google Chrome development history</h2>
+        <P>Chrome was one the first major web browsers to combine the search box and address bar, known as the Omnibar, a feature that most competitors have since adopted. Users can sign in with their Google accounts, letting them sync bookmarks and webpages across multiple devices and access other Google products such as Google Drive.
+
+            <P>The Google Chrome browser takes a sandboxing-based approach to web security. Each open website runs as its own process, which helps prevent malicious code on one page from affecting others or the computer OS itself. The browser supports web standards such as HTML5 and cascading style sheets.
+            </P>
+            <P>Key events in Google Chrome's development history and among Chrome updates include the following:</P>
+            <ul>
+                <li>2006. Google began developing Chrome based on open source code from the Mozilla Foundation and the Google Chromium project.</li>
+                <li>Sept. 2, 2008. Google released a beta version of Chrome for Windows.</li>
+                <li>Dec. 8, 2009. A beta version of Chrome was released for MacOS X and Linux.</li>
+                <li>May 25, 2010. Google released Chrome 5.0, the first stable Chrome version that supports Windows, Mac and Linux.</li>
+                <li>Feb. 11, 2011. Google launched the Chrome Web Store, an online marketplace where users can install free and paid browser extensions to run inside Chrome</li>
+                <li>2011. Google released Chrome OS, its OS for web-based applications, on the Chrome browser.</li>
+                <li>June 2012. The first stable version of Chrome was released for iPhone and Android mobile devices respectively.</li>
+                <li>Aug. 22, 2017. Google released Chrome Enterprise, an enterprise version of Chrome, allowing businesses to deploy and manage it at scale across their organizations.</li>
+            </ul>
+           </P>
+        <h2 id="Features">Features of Chrome OS</h2>
+        <p>Chrome OS possesses some unique attributes that are discussed below:
+     
+            <ul>
+            <li><strong>Easy Setup</strong>: It is very easy to set up Chromebook or switch to it if a person has been using Chrome apps such as Google Docs, Google Photos, and Google Drive etc. The user only has to log in on browser to access it.</li>
+            <li><strong>Intelligent Search</strong>: One can search almost anything on their Chromebook device with the strength of Google. Whether it is exploring the files, applications or web history, all of this can be done very conveniently with the click of the Search button on your keyboard.</li>
+            <li><strong>Super Sync</strong>: The characteristic of sync via Google Chrome is expanded in the Chrome OS. The OS keeps a record of the active tabs, remembered passwords, bookmarks and searches by synching it continuously during the active period.</li>
+            <li><strong>Less Storage Requirement</strong>: Chrome OS is designed to work on Cloud computing technology where data from both ends, the sender (user) and the receiver (application), is stored in the Cloud.</li>
+            <li><strong>Rapid Response</strong>: Even while handling multiple tabs or streaming HD videos, Chrome OS's response rate is very quick, and it does not keep you waiting.</li>
+            <li><strong>Automated Updates</strong>: Chrome OS does not require any whole time or space to run the updating process. The user is always using the most updated version of the OS without hindering the current workflow.</li>
+            <li><strong>Layered Security</strong>: Chrome OS offers a very secure environment to work on. It offers multiple layers of security by using measures such as Google Security chip, Sandboxing technique, and Safe sharing.</li>
+        </ul>
+        </p>
+        <div>
+            <a href="2page.html" class="input-group btn">Next</a>
+        </div>
+    </div>
+</body>
+</html>
